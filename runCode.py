@@ -3,10 +3,9 @@ from util import listNode
 from util import treeNode
 
 if __name__ == '__main__':
-    arr = [1, 2, -3, 3, 1]
-    ans = listNode.createlistNode(1, arr)
-    aa = testSolution.removeZeroSumSublists(1,ans)
-    listNode.printlistnode(1, aa)
+    arr = [4,3,2,7,8,2,3,1]
+    ans = testSolution.findDuplicates(1, arr)
+    print(f'{ans} duplicates found')
     # tree = testSolution.removeZeroSumSublists(1, ans, 2)
     # listNode.printlistnode(1, tree)
     # tree = treeNode.mkTree("1,2,3,4,5,null,6,7,8,null,10")

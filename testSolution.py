@@ -36,9 +36,9 @@ def removeZeroSumSublists(self, head: Optional[ListNode]) -> Optional[ListNode]:
     while current:
         sum += current.val
         if sum == 0:
-            return removeZeroSumSublists(1,current.next)
+            return removeZeroSumSublists(1, current.next)
         current = current.next
-    head.next = removeZeroSumSublists(1,head.next)
+    head.next = removeZeroSumSublists(1, head.next)
     return head
     # Your runtime beats 36.64 % of Python3 submissions
     # Your memory usage beats 37.09 % of Python3 submissions (41.70 MB)
@@ -53,3 +53,15 @@ def minimumLength(self, s: str) -> int:
         while start <= end and charS == s[end]:
             end -= 1
     return end + 1 - start
+
+
+def findDuplicates(self, nums: List[int]) -> List[int]:
+    lst = []
+    count = [0] * (len(nums) + 1)
+    for i in nums:
+        count[i] += 1
+    print(f'count = {count}')
+    for i in range(1, len(nums) + 1):
+        if count[i] == 2:
+            lst.append(i)
+    return lst
