@@ -18,12 +18,14 @@ if __name__ == '__main__':
     # print(f"tree is {t3}")
     # print(treeNode.sequenceTraverse.__doc__)
     
-    
-    input_path1 = '/Users/zhao/.leetcode/temp1'
+    #源文件
+    input_path1 = '/Users/zhao/Documents/leetcode100'
+    #已经写过的题目
     input_path2 = '/Users/zhao/.leetcode/java'
-    output_file_path1 = '/Users/zhao/.leetcode/leetCode_100'
+    #源文件清洗后的路径，同时也是需要标记处理的文件路径
+    output_file_path1 = '/Users/zhao/Documents/clean'
+    #打上标记后的输出路径
     output_file_path2 = '/Users/zhao/.leetcode/temp_100'
-    target_path = '//Users/zhao/.leetcode/leetCode_100'
     #sloveLeetHotSheet(input_path1,output_file_path1)
-    readFileName(input_path2,target_path,output_file_path2)
+    readFileName(input_path2,output_file_path1,output_file_path2)
     print(f'结果处理完毕 ')
